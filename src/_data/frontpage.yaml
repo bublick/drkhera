@@ -1,8 +1,5 @@
-metainfo:
-  title: Home
-  description: Page meta description
 title: Test
-desc: meta
+description: meta
 topsection:
   title: Lorem ipsum
   subtitle: lorem ipsum
