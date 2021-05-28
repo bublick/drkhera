@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-      {{title}}
-    </title>
-    {% if description %}
-      <meta name="description" content="{{description}}"/>
+    {% if pageTitle %}
+        <title>
+            {{pageTitle}}
+        </title>    
+    {% endif %}
+    {% if pageDescription %}
+        <meta name="description" content="{{pageDescription}}"/>
     {% endif %}
     {% block head %}{% endblock %}
     <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
