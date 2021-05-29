@@ -81,22 +81,25 @@ collections:
     files:
       - label: "Home Page"
         name: "home"
-        file: "src/_data/frontpage.yaml"
+        file: "src/index.md"
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Description, name: description, widget: string }
+          - { label: Body, name: 'body', widget: "markdown" }
           - {label: "Top Section", name: topsection, widget: object, fields: [
               { label: Title, name: title, widget: "string" },
               { label: Subtitle, name: subtitle, widget: "string"},
-              { label: Image, name: image, widget: "image"}]}
+              { label: Image, name: image, widget: "image"},
+              { label: Image ALT, name: alt, widget: "string"}]}
           - {label: "Extra", name: extra, widget: object, summary: "Extra options", fields: [
               { label: Quick Links, name: quicklinks, widget: "boolean", default: true }]}
       - label: "Contact Page"
         name: "contact"
         file: "src/contact.md"
         fields:
-          - { image: Image, name: image, widget: "image"}
           - { label: Title, name: title, widget: "string" }
+          - { label: Description, name: description, widget: string }
+          - { image: Image, name: image, widget: "image"}
           - { label: Body, name: 'body', widget: "markdown" }
           - label: "Entries"
             name: entries
@@ -112,8 +115,9 @@ collections:
         name: "values"
         file: "src/values.md"
         fields:
-          - { image: Cover, name: cover, widget: "image"}
           - { label: Title, name: title, widget: "string" }
+          - { label: Description, name: description, widget: string }
+          - { image: Cover, name: cover, widget: "image"}
           - label: "Values"
             name: values
             widget: list 

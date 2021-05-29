@@ -1,5 +1,6 @@
-title: Test
-description: meta
+---
+title: Home page
+description: Meta description of home page
 topsection:
   title: Lorem ipsum
   subtitle: lorem ipsum
@@ -7,3 +8,7 @@ topsection:
   alt: Man working
 extra:
   quicklinks: true
+
+layout: home
+path: home
+---

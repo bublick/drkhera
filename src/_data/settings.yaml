@@ -1,3 +1,7 @@
 name: Test Site
 author: Test Site
 url: /
+
+SEO:
+  site_name: "Test site"
+  separator: " | "
